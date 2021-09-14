@@ -16,6 +16,7 @@ services:
     environment:
       - MYSQL_DATABASE=iedb_public
       - MYSQL_ROOT_PASSWORD=iedb
+      - MYSQL_ROOT_HOST='%'  # allow remote access
     networks:
       - iedb
 
